@@ -130,8 +130,10 @@ Plotly.newPlot("bubble",bubbleData, bubbleLayout);
 
 // 4. Create the trace for the gauge chart.
 var gaugeData = [{
+  type: 'indicator',
+  mode: 'gauge+number',
   domain: { x: [0, 1], y: [0, 1] },
-  value: wfreqs,
+  value: wfreq,
   gauge: {
     axis: {range : [null,10],tickwidth:1},
     steps: [
@@ -141,8 +143,7 @@ var gaugeData = [{
       { range: [6, 8], color: "limegreen" },
       { range: [8, 10], color: "green" }],
   title: { text: "Belly Button Washing Frequency" },
-  type: "indicator",
-  mode: "gauge+number"
+
     }
 }     
 ];
