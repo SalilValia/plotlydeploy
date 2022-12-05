@@ -139,12 +139,11 @@ var gaugeData = [{
       { range: [2, 4], color: "orange" },
       { range: [4, 6], color: "yellow" },
       { range: [6, 8], color: "limegreen" },
-      { range: [8, 10], color: "green" }]
-  },
+      { range: [8, 10], color: "green" }],
   title: { text: "Belly Button Washing Frequency" },
   type: "indicator",
   mode: "gauge+number"
-
+    }
 }     
 ];
 
