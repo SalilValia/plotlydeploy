@@ -152,6 +152,7 @@ var gaugeData = [{
 
 // 5. Create the layout for the gauge chart.
 var gaugeLayout = {
+  width: 500, height: 350, 
   margin: { l: 25, r: 25, t: 0, b: 0 }
 };
 // 6. Use Plotly to plot the gauge data and layout.
