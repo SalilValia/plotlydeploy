@@ -136,7 +136,7 @@ var gaugeData = [{
   domain: { x: [0, 1], y: [0, 1] },
   value: wfreq,
   gauge: {
-    axis: {range : [null,10], tickwidth:1, tickcolor: "gray"},
+    axis: {range : [null,10], tickwidth: 1, tickcolor: "gray"},
     bar: { color: "black"},
     bgcolor: "white",
     borderwitdh: 1,
@@ -151,11 +151,10 @@ var gaugeData = [{
 }];
 
 // 5. Create the layout for the gauge chart.
-var gaugeLayout = {width: 500, height: 350, margin: { t: 0, b: 0 }
- 
+var gaugeLayout = {
+  margin: { l: 25, r: 25, t: 0, b: 0 }
 };
-
 // 6. Use Plotly to plot the gauge data and layout.
-Plotly.newPlot("gauge",gaugeData,gaugeLayout);
+Plotly.newPlot("gauge", gaugeData, gaugeLayout);
 });
 }
